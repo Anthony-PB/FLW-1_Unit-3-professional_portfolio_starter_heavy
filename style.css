@@ -1,14 +1,39 @@
+/* task 10: choose 2-4 colors for your theme and add them as font or background colors.*/
 html, body {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
-  background-color: black;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Crimson Text', serif;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background: linear-gradient( to left top, #ff0000, black);
 }
 
-.companies {
+/* task 11: add flexbox to the div with a class named navBar.*/
+.navBar {
   display: flex;
   justify-content: space-around;
+  font-size: 25px;
+}
+
+
+/* task 12: style your nav bar so the links change color/style when your hover over them.*/
+/*.navBar :hover {
+  transform: scale(1.15);
+}*/
+
+/* task 13: add at least 1 Google Font - either for the headers or paragraphs. Or both! Also, make sure it's linked in the html pages you want it used on!*/
+.header {
+  font-family: 'Cinzel', serif;
+  color:  #ffffff;
+}
+
+
+/* task 14: add a border to the images.*/
+.APBpic {
+  display: flex;
+  justify-content: space-around;
+  border: #ffffff 5px double;
 }
 
 .home {
@@ -17,17 +42,18 @@ html, body {
 
 .student {
   border: 1px solid white;
-  width: 300px;
+  width: 450px;
   text-align: center;
 }
 
 .student img {
-  width: 200px;
+  width: 350px;
 }
 
 .students{
-  display: flex;
-  justify-content: space-around;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 h1 {
@@ -38,10 +64,54 @@ img {
   width: 400px;
 }
 
-a {
-  color: #0080ff;
+.agendaLink{
+  font-size:20px;
 }
 
-a:hover {
-  color: #17d3ff;
+.popImg:hover{
+  transform: scale(1.15);
+  transition-duration: 0.75s;
+  padding-top: 45px;
+  margin-bottom: 20px;
+}
+
+.popImg{
+  padding-top: 30px;
+  height: auto;
+}
+
+.portfolios{
+  align-items: center;
+}
+
+.aCool {
+  background-image: linear-gradient(
+    to right,
+    #ff0000,
+    #ffffff 50%,
+    #ffffff 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transition: all ease-in-out;
+}
+
+.aCool:hover {
+ background-position: 0;
+}
+.aCool:hover::before {
+  width: 100%;
+}
+
+a:hover{
+  transform: scale(1.1);
+  transition-duration: 0.75s;
+}
+
+.about{
+  font-size: 15px;
 }
